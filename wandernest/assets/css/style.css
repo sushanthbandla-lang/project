@@ -1,0 +1,537 @@
+/* =========================================
+   WANDERNEST - COMPLETE STYLE.CSS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    opacity: 0.75;
+}
+
+
+/* =========================================
+   HOME HERO
+   ========================================= */
+
+.home-hero {
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+
+    background-image: url("/wandernest/assets/images/home.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.home-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.50);
+
+    z-index: 1;
+}
+
+.home-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    color: white;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.home-hero h1 {
+    color: white;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.home-hero p {
+    color: white;
+    font-size: 1.2rem;
+    max-width: 700px;
+}
+
+.home-hero .btn {
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   SECTION TITLE
+   ========================================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+
+/* =========================================
+   GENERAL CARDS
+   ========================================= */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DESTINATION CARDS
+   ========================================= */
+
+.destination-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   TRIP CARDS
+   ========================================= */
+
+.trip-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   HOTEL CARDS
+   ========================================= */
+
+.hotel-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   RENTAL CARDS
+   ========================================= */
+
+.rental-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   DETAILS PAGE
+   ========================================= */
+
+.details-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.details-content {
+    padding: 20px;
+}
+
+.details-content h1,
+.details-content h2 {
+    font-weight: 700;
+}
+
+
+/* =========================================
+   BOOKING FORMS
+   ========================================= */
+
+.booking-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.booking-form .form-control,
+.booking-form .form-select {
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.booking-form .form-control:focus,
+.booking-form .form-select:focus {
+    box-shadow: none;
+}
+
+
+/* =========================================
+   REVIEW CARDS
+   ========================================= */
+
+.review-card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.review-stars {
+    color: #f5b301;
+    font-size: 1.2rem;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+.about-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.about-content h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+
+.contact-form {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.contact-form .form-control {
+    border-radius: 8px;
+    padding: 11px;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn {
+    border-radius: 7px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   PAGE HEADER
+   ========================================= */
+
+.page-header {
+    background-color: #212529;
+
+    color: white;
+
+    padding: 70px 0;
+
+    text-align: center;
+}
+
+.page-header h1 {
+    font-weight: 700;
+}
+
+.page-header p {
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   FEATURE SECTION
+   ========================================= */
+
+.feature-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.feature-card {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    height: 100%;
+}
+
+
+/* =========================================
+   SUCCESS BOX
+   ========================================= */
+
+.success-box {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.success-box h1 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #212529;
+
+    color: white;
+
+    padding: 40px 0;
+
+    margin-top: 50px;
+}
+
+footer h4,
+footer h5 {
+    color: white;
+}
+
+footer p {
+    color: #ddd;
+}
+
+footer a {
+    color: #ddd;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   ALERTS
+   ========================================= */
+
+.alert {
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   TABLES
+   ========================================= */
+
+.table {
+    background: white;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 991px) {
+
+    .home-hero {
+        min-height: 80vh;
+    }
+
+    .home-hero-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .home-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .home-hero {
+        min-height: 75vh;
+
+        background-position: center center;
+    }
+
+    .home-hero-content {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .home-hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .home-hero p {
+        font-size: 1rem;
+    }
+
+    .home-hero .btn {
+        display: block;
+
+        width: 100%;
+
+        margin-bottom: 10px;
+    }
+
+    .details-image {
+        height: 300px;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .home-hero {
+        min-height: 70vh;
+    }
+
+    .home-hero h1 {
+        font-size: 2rem;
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
